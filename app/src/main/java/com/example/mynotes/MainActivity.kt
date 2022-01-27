@@ -15,8 +15,6 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener() {
             val intent = Intent(this, NotesActivity::class.java)
             startActivity(intent)
-
-            Toast.makeText(this, "prueba", Toast.LENGTH_SHORT).show()
         }
     }
 }

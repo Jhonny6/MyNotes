@@ -17,7 +17,6 @@ private lateinit var binding: ActivityNotesBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Toast.makeText(this, "inicia fragment", Toast.LENGTH_SHORT).show()
      binding = ActivityNotesBinding.inflate(layoutInflater)
      setContentView(binding.root)
 
