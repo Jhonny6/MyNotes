@@ -3,6 +3,7 @@ package com.example.mynotes
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener() {
             val intent = Intent(this, NotesActivity::class.java)
             startActivity(intent)
+
+            Toast.makeText(this, "prueba", Toast.LENGTH_SHORT).show()
         }
     }
 }
