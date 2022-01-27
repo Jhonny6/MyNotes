@@ -1,6 +1,7 @@
 package com.example.mynotes
 
 import android.os.Bundle
+import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -16,6 +17,7 @@ private lateinit var binding: ActivityNotesBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        Toast.makeText(this, "inicia fragment", Toast.LENGTH_SHORT).show()
      binding = ActivityNotesBinding.inflate(layoutInflater)
      setContentView(binding.root)
 
